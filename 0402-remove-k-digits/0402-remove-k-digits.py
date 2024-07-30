@@ -20,11 +20,11 @@ class Solution:
                 stack.append(num[i])
                 i += 1
 
-            while nb < k:  # Ensure all required digits are removed
+            while nb < k:
                 stack.pop()
                 nb += 1
 
-            # Remove leading zeros
+
             result = ''.join(stack).lstrip('0')
             return result if result else '0'
 
